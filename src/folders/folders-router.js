@@ -1,8 +1,8 @@
 const path = require('path');
 const express = require('express');
-const FoldersRouter = express.Router();
 const xss = require('xss');
 const FoldersService = require('./folders-service');
+const FoldersRouter = express.Router();
 const jsonParser = express.json();
 
 const serializeFolder = folder => ({
